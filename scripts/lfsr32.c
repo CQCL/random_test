@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 	}
 
 	FILE *output = fopen(argv[1], "w");
-    int n_bits = atoi(argv[2]);
+    long long n_bits = atoll(argv[2]);
     unsigned int seed = atoi(argv[3]);
     for (int i = 4; i < argc; i++) {
         int pos = atoi(argv[i]);
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
         poly[pos] = 1;
     }
 
-    for (int i = 0; i < n_bits; i += 8 * SIZE) {
+    for (long long i = 0; i < n_bits; i += 8 * SIZE) {
 		for (int j = 0; j < 8 * SIZE; ++j) { // TODO deal with non-multiples of buffer
             #if DEBUG
             printf("%u", seed & 1);
