@@ -1,6 +1,7 @@
 # Running Statistical Tests
 
-This repository contains some scripts to help you install statistical tests.
+This repository contains scripts to assist with installing and using various 
+statistical test suites.
 
 To install dieharder on Ubuntu or Debian, run:
 ```bash
@@ -14,13 +15,18 @@ To run the tests, move the data file into a folder, then run
 folder with the test results.
 
 ## How to Cite
-If you use `random_test` in your research, please cite the accompanying [paper](https://arxiv.org/abs/2403.18716):
+If you use `random_test` in your research, please cite the accompanying [paper](https://doi.org/10.3390/e26121053):
 
 ```
 @article{foreman2024statistical,
   title={Statistical testing of random number generators and their improvement using randomness extraction},
   author={Foreman, Cameron and Yeung, Richie and Curchod, Florian J},
-  journal={arXiv preprint arXiv:2403.18716},
-  year={2024}
+  journal={Entropy},
+  volume={26},
+  number={12},
+  pages={1053},
+  year={2024},
+  publisher={Multidisciplinary Digital Publishing Institute}
+  doi={https://doi.org/10.3390/e26121053}
 }
 ```
